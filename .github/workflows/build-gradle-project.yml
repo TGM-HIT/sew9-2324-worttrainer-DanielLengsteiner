@@ -11,3 +11,7 @@ jobs:
         uses: gradle/gradle-build-action@v2
       - name: Run Tests
         run: gradle test
+      - name: Create Javadoc
+        run: gradle javadoc
+      - name: Build Jar
+        run: gradle jar
