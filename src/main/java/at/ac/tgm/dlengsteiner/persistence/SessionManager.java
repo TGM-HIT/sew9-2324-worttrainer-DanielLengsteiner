@@ -12,19 +12,19 @@ public class SessionManager {
         this.saveType=saveType;
     }
 
-    WorttrainerSession read(){
+    public WorttrainerSession read(){
         return saveType.readSession();
     }
 
-    WorttrainerSession read(String filename){
+    public WorttrainerSession read(String filename){
         return saveType.readSession(filename);
     }
 
-    void save(WorttrainerSession session){
+    public void save(WorttrainerSession session){
         saveType.saveSession(session);
     }
 
-    void save(WorttrainerSession session, String filename){
+    public void save(WorttrainerSession session, String filename){
         saveType.saveSession(session, filename);
     }
 }
