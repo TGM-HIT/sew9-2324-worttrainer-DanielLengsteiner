@@ -17,13 +17,15 @@ import java.io.InputStream;
  */
 public class JSONType implements SaveType{
 
+    private static final String standardPath =  "./worttrainerSession.json";
+
     /**
      * Reads WorttrainerSession-Object as JSON at the path ./.sessionData/worttrainerSession.json
      * @return the session
      */
     @Override
     public WorttrainerSession readSession() {
-        return readSession("./.sessionData/worttrainerSession.json");
+        return readSession(standardPath);
     }
 
     /**
@@ -65,7 +67,7 @@ public class JSONType implements SaveType{
      */
     @Override
     public void saveSession(WorttrainerSession session) {
-        saveSession(session, "./.sessionData/worttrainerSession.json");
+        saveSession(session, standardPath);
     }
 
     /**
