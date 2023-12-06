@@ -25,7 +25,8 @@ public class PersistenceTest {
         assertEquals(t.getWordImagePairs()[0].getWord(),session1.getTrainer().getWordImagePairs()[0].getWord());
     }
 
-    public void failedReadTest(){
+    @Test
+    public void failedReadTest() {
         Worttrainer t = new Worttrainer();
         t.setIncorrect(4);
         t.setCorrect(6);

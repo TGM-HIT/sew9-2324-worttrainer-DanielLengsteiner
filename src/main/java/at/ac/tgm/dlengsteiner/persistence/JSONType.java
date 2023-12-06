@@ -6,9 +6,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 
 /**
  * Saves and reads CSV-files of WorttrainerSession-Objects
@@ -35,8 +33,7 @@ public class JSONType implements SaveType{
      */
     @Override
     public WorttrainerSession readSession(String filename) {
-        try(InputStream is = JSONType.class.getResourceAsStream(filename)) {
-            assert is != null;
+        try(InputStream is = new FileInputStream(filename)) {
             JSONObject jo = new JSONObject(new JSONTokener(is));
             int correct = jo.getInt("correct");
             int incorrect = jo.getInt("incorrect");
@@ -92,11 +89,9 @@ public class JSONType implements SaveType{
 
         jo1.put("pairs",ja1);
 
-        try {
-            FileWriter file = new FileWriter(filename);
+        try(FileWriter file = new FileWriter(filename)) {
             file.write(jo1.toString());
             file.flush();
-            file.close();
         } catch (IOException e) {
             System.err.println("Error while saving file!\n" + e.getMessage());
         }
