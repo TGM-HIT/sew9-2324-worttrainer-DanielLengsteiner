@@ -20,5 +20,5 @@ tasks.test {
 }
 
 application {
-    mainClass = "at.ac.tgm.dlengsteiner.model.Worttrainer"
+    mainClass = "at.ac.tgm.dlengsteiner.Main"
 }
