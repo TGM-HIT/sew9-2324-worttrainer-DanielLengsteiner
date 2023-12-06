@@ -48,6 +48,22 @@ public class Worttrainer {
     }
 
     /**
+     * Sets the number of correct guesses
+     * @param correct the number of correct guesses
+     */
+    public void setCorrect(int correct) {
+        this.correct = correct;
+    }
+
+    /**
+     * Sets the number of incorrect guesses
+     * @param incorrect the number of incorrect guesses
+     */
+    public void setIncorrect(int incorrect) {
+        this.incorrect = incorrect;
+    }
+
+    /**
      * Returns number of correct guesses
      * @return number of correct guesses
      */
