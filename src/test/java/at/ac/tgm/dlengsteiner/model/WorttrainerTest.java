@@ -17,7 +17,6 @@ public class WorttrainerTest {
     public void worttrainerRunTest(){
         Worttrainer t = new Worttrainer();
         WordImagePair[] pairs = t.getWordImagePairs();
-        int length = pairs.length;
 
         for (int i = 0; i<pairs.length; i++)
             assertEquals(WordImagePairs.PAIRS[i].getWord(), pairs[i].getWord());
