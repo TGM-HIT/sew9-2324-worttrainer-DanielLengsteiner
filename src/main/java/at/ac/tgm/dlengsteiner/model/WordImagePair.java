@@ -1,4 +1,4 @@
-package model;
+package at.ac.tgm.dlengsteiner.model;
 
 // Importing required classes
 import java.net.MalformedURLException;
@@ -75,13 +75,11 @@ public class WordImagePair {
      * @return true if URL is valid
      */
     public boolean isValidURL(String url) {
-
         try {
             new URL(url).toURI();
         } catch (MalformedURLException | URISyntaxException e) {
             return false;
         }
-
         return true;
     }
 }
