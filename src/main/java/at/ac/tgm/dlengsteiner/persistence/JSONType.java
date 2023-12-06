@@ -52,7 +52,7 @@ public class JSONType implements SaveType{
             return new WorttrainerSession(t, currentPairIndex);
 
         }catch (IOException exception){
-            System.err.println("Error while reading file!\n" + exception.getMessage());
+            System.err.println("Error while reading file " + filename + "!\n" + exception.getMessage());
         }
 
         return null;
