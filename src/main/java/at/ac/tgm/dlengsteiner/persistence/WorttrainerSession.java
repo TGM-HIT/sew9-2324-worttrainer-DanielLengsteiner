@@ -1,4 +1,4 @@
-package at.ac.tgm.dlengsteiner.persistance;
+package at.ac.tgm.dlengsteiner.persistence;
 
 import at.ac.tgm.dlengsteiner.model.Worttrainer;
 

@@ -2,8 +2,8 @@ package at.ac.tgm.dlengsteiner;
 
 import at.ac.tgm.dlengsteiner.model.WordImagePair;
 import at.ac.tgm.dlengsteiner.model.Worttrainer;
-import at.ac.tgm.dlengsteiner.persistance.JSONType;
-import at.ac.tgm.dlengsteiner.persistance.WorttrainerSession;
+import at.ac.tgm.dlengsteiner.persistence.JSONType;
+import at.ac.tgm.dlengsteiner.persistence.WorttrainerSession;
 
 import javax.swing.*;
 

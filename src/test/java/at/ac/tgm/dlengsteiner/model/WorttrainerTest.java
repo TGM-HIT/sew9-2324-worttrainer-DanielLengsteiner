@@ -13,6 +13,9 @@ public class WorttrainerTest {
         }
     }
 
+    /**
+     * Checks if data of a Worttrainer-Object is manipulated correctly
+     */
     @Test
     public void worttrainerRunTest(){
         Worttrainer t = new Worttrainer();

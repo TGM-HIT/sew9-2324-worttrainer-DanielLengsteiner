@@ -1,4 +1,4 @@
-package at.ac.tgm.dlengsteiner.persistance;
+package at.ac.tgm.dlengsteiner.persistence;
 
 /**
  * Interface for Classes which save and read WorttrainerSession-Objects
